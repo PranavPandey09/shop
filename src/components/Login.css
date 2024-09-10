@@ -1,0 +1,96 @@
+/* Container styling */
+.login-container {
+    width: 360px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #e8bbeb;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header styling */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Form styling */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input fields styling */
+.login-container input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #060505;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button styling */
+.login-container button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #04880f;
+    color: #121010;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #043d7a;
+    transform: scale(1.05);
+}
+
+/* Toggle link styling */
+.login-container .toggle-link {
+    color: #060f18;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+/* Toggle link hover effect */
+.login-container .toggle-link:hover {
+    color: #0056b3;
+}
+
+/* Password visibility toggle icon */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+.password-field .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.password-field .eye-icon:hover {
+    color: #333;
+}

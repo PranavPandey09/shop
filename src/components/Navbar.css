@@ -1,0 +1,203 @@
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(153, 116, 153);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-icon {
+    color: white;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-icon svg {
+    font-size: 1.6rem;
+} */
+
+
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(153, 116, 153);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Navbar Icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-icon {
+    color: white;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* Cart & Wishlist Icons */
+.navbar-icon svg {
+    font-size: 1.6rem;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px; /* Adjust padding for small screens */
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar-logo {
+        font-size: 1.2rem; /* Smaller logo font */
+        margin-bottom: 10px; /* Add margin to space out logo from links */
+    }
+
+    .navbar-links {
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Show navbar links when toggled (you'll need a toggle button for this in JS) */
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links a {
+        font-size: 1rem; /* Smaller link font */
+        padding: 10px 0; /* Add padding for better spacing */
+        width: 100%;
+        border-bottom: 1px solid #fff; /* Optional: add border between items */
+    }
+
+    .navbar-icons {
+        margin-top: 10px;
+    }
+
+    .navbar-icon svg {
+        font-size: 1.4rem; /* Adjust icon size for small screens */
+    }
+}
+
+/* Tablet Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Slightly adjust padding */
+    }
+
+    .navbar-logo {
+        font-size: 1.3rem; /* Slightly smaller logo */
+    }
+
+    .navbar-links a {
+        font-size: 1.1rem; /* Slightly smaller link text */
+    }
+
+    .navbar-icon svg {
+        font-size: 1.5rem; /* Adjust icon size */
+    }
+}
+
+/* Larger Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .navbar-logo {
+        font-size: 1.4rem;
+    }
+
+    .navbar-links a {
+        font-size: 1.1rem;
+    }
+
+    .navbar-icon svg {
+        font-size: 1.6rem;
+    }
+}
